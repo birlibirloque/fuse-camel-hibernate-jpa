@@ -22,7 +22,7 @@
 	<parent>
 		<artifactId>camel-hibernate-jpa</artifactId>
 		<groupId>org.mrobson.example</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>2.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>org.mrobson.example.camel-hibernate-jpa</groupId>
 			<artifactId>camel-hibernate-datamodel</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -100,14 +100,13 @@
 					<instructions>
 <!-- 						<Bundle-Activator>org.mrobson.example.hibernatetx.activator.Activator</Bundle-Activator>
  -->						<Import-Package>
-							javax.persistence;version="[2.0,2.1)",
-                                                        javax.persistence.criteria;version="[2.0,2.1)",
-                                                        javax.sql,
-                                                        org.hibernate;version="[4.2,4.3)",
-                                                        org.hibernate.proxy;version="[4.2,4.3)",
-                                                        javassist.util.proxy,
-                                                        org.hibernate.ejb;version="[4.2,5)"
-                                                        org.hibernate.proxy;version="[4.2,4.3)",
+							javax.persistence,
+                            javax.persistence.criteria,
+                            javax.sql,
+                            org.hibernate,
+                            org.hibernate.proxy,
+                            javassist.util.proxy,
+                            org.hibernate.ejb,
 	 						org.mrobson.example.camelhibernatejpa.datamodel,
 							*
 						</Import-Package>

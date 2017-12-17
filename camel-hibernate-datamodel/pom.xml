@@ -23,7 +23,7 @@
 	<parent>
 		<artifactId>camel-hibernate-jpa</artifactId>
 		<groupId>org.mrobson.example</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>2.0-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -76,14 +76,13 @@
 						<Bundle-SymbolicName>org.mrobson.example.camelhibernatejpa.datamodel;blueprint.timeout:=10000</Bundle-SymbolicName>
 <!-- 						<Bundle-Activator>org.mrobson.example.hibernatetx.activator.Activator</Bundle-Activator>						
  -->						<Import-Package>
-							javax.persistence;version="[2.0,2.1)",
-							javax.persistence.criteria;version="[2.0,2.1)",
+							javax.persistence,
+							javax.persistence.criteria,
 							javax.sql,
-							org.hibernate;version="[4.2,4.3)",
-							org.hibernate.proxy;version="[4.2,4.3)",
+							org.hibernate,
+							org.hibernate.proxy,
 							javassist.util.proxy,
-							org.hibernate.ejb;version="[4.2,5)"
-							org.hibernate.proxy;version="[4.2,4.3)",
+							org.hibernate.ejb
 							<!--oracle.jdbc.driver,-->
 							*
 						</Import-Package>
@@ -94,6 +93,6 @@
 					</instructions>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>		
 	</build>
 </project>

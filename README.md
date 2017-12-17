@@ -4,7 +4,7 @@ Author: Matt Robson
 
 Technologies: Fuse, OSGi, Camel, Hibernate, Blueprint, Karaf Features, Fuse BOM, Aries Auto Enlist XA Transactions
 
-Product: Fuse 6.2.1
+Product: Fuse 6.3.0
 
 Breakdown
 ---------
@@ -20,7 +20,7 @@ Before building and running this quick start you need:
 
 * Maven 3.2 or higher
 * Java 1.7 or 1.8
-* JBoss Fuse 6.2.1
+* JBoss Fuse 6.3.0
 
 Build and Deploy
 ----------------
@@ -43,7 +43,7 @@ Build and Deploy
 
 	mvn clean install
 
-5) start JBoss Fuse 6.2.1
+5) start JBoss Fuse 6.3.0
 
 	./fuse or ./start
 
@@ -57,7 +57,7 @@ Download the latest driver from Oracle and install it to your local maven reposi
 
 8) add the features file
 
-	features:addurl mvn:org.mrobson.example.camel-hibernate-jpa/camel-hibernate-features/1.0-SNAPSHOT/xml/features
+	features:addurl mvn:org.mrobson.example.camel-hibernate-jpa/camel-hibernate-features/2.0-SNAPSHOT/xml/features
 
 9) install
 
