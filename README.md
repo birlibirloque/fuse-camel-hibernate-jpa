@@ -49,7 +49,7 @@ Build and Deploy
 
 6) start Oracle database (refer to vendor documentation if you need to do this, for easy testing I recommend using Oracle XE)
 
-7) deploy Oracle JDBC driver
+7) deploy Oracle JDBC driver (Optional)
 
 Download the latest driver from Oracle and install it to your local maven repository (account required):
 
@@ -57,7 +57,7 @@ Download the latest driver from Oracle and install it to your local maven reposi
 
 8) add the features file
 
-	features:addurl mvn:org.mrobson.example.hibernatetx/features/1.0-SNAPSHOT/xml/features
+	features:addurl mvn:org.mrobson.example.camel-hibernate-jpa/camel-hibernate-features/1.0-SNAPSHOT/xml/features
 
 9) install
 
